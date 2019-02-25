@@ -18,7 +18,7 @@ export default class CalcBuilder extends React.Component {
         if(symbol === "x") {
             symbol = "*";
         }
-        this.setState ({formula: this.state.command + symbol})
+        this.setState ({command: this.state.command + symbol})
     };
 
     onPressResult = () => {
