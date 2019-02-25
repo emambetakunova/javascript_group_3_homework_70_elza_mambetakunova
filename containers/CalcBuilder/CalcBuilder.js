@@ -31,7 +31,7 @@ export default class CalcBuilder extends React.Component {
             this.setState ({result: eval(this.state.command) || 0, command: ''})
         } catch (e) {
             alert ("Error!");
-            this.setState ({command: ''})
+            this.setState ({command: '', result: 0})
         }
     };
 
